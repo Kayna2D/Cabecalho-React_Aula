@@ -14,18 +14,24 @@ export default function App() {
         logo2 = "game-controller" 
         texto2 = "Jogos"
         cor2 = "#525e98"
-        logo3 = "film" 
-        texto3 = "Filmes e Séries"
-        cor3 = "#f93a2f"
-        logo4 = "headset-sharp" 
-        texto4 = "Música"
-        cor4 = "#0099e1"
-        logo5 = "book" 
-        texto5 = "Livros"
-        cor5 = "#a652bb"
-        logo6 = "caret-up"
-        texto6 = "Atualizações"
-        cor6 = "grey"
+        >
+        </Botao>
+        <Botao
+        Logo = "film" 
+        texto = "Filmes e Séries"
+        cor = "#f93a2f"
+        logo2 = "headset-sharp" 
+        texto2 = "Música"
+        cor2 = "#0099e1"
+        >
+        </Botao>
+        <Botao
+        Logo = "book" 
+        texto = "Livros"
+        cor = "#a652bb"
+        logo2 = "caret-up"
+        texto2 = "Atualizações"
+        cor2 = "grey"
         >
         </Botao>
     </View>

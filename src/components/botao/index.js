@@ -2,7 +2,7 @@ import React,{Fragment} from 'react';
 import {View, Image, Text, TouchableOpacity, StyleSheet} from 'react-native';
 import {Ionicons} from '@expo/vector-icons';
 
-export default function Botao({Logo,texto,cor,logo2,texto2,cor2,logo3,texto3,cor3,logo4,texto4,cor4,logo5,texto5,cor5,logo6,texto6,cor6}){
+export default function Botao({Logo,texto,cor,logo2,texto2,cor2}){
 
     return(
         <Text style={estilo.containerBotoes1}>
@@ -23,37 +23,7 @@ export default function Botao({Logo,texto,cor,logo2,texto2,cor2,logo3,texto3,cor
             </TouchableOpacity>
 
                            
-            <TouchableOpacity style={[estilo.botoes ,{backgroundColor:cor3}]}>
-                <Ionicons name= {logo3} size={20} color="white"
 
-                style= {{marginRight:10}}/>
-                <Text style ={estilo.textoBotao} > {texto3} </Text>
-
-            </TouchableOpacity>
-
-            <TouchableOpacity style={[estilo.botoes ,{backgroundColor:cor4}]}>
-                <Ionicons name= {logo4} size={20} color="white"
-
-                style= {{marginRight:10}}/>
-                <Text style ={estilo.textoBotao} > {texto4} </Text>
-
-            </TouchableOpacity>
-            
-            <TouchableOpacity style={[estilo.botoes ,{backgroundColor:cor5}]}>
-                <Ionicons name= {logo5} size={20} color="white"
-
-                style= {{marginRight:10}}/>
-                <Text style ={estilo.textoBotao} > {texto5} </Text>
-
-            </TouchableOpacity>
-
-            <TouchableOpacity style={[estilo.botoes ,{backgroundColor:cor6}]}>
-                <Ionicons name= {logo6} size={20} color="white"
-
-                style= {{marginRight:10}}/>
-                <Text style ={estilo.textoBotao} > {texto6} </Text>
-
-            </TouchableOpacity>
            
             </Text>
         
