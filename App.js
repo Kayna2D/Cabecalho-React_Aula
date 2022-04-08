@@ -1,12 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import Cabecalho from './src/components/cabecalho';
 import Botao from './src/components/botao';
-import { StyleSheet, Text, View } from 'react-native';
+import Jogos from './src/components/jogos';
+import JOGOS from './src/dados/jogos';
+import Destaques from './src/components/destaque';
+import { FlatList, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
     <View>
       <Cabecalho></Cabecalho>
+      <View>
       <Botao
         Logo =  "logo-android"
         texto = "Apps"
@@ -34,6 +38,23 @@ export default function App() {
         cor2 = "grey"
         >
         </Botao>
+        </View>
+        <Destaques></Destaques>
+        <View>
+          <FlatList
+          horizontal={true}
+          data = {JOGOS}
+          keyExtractor = {(item) => item.id}
+          renderItem = { ({ item }) => (
+
+          <Jogos
+          titulo ={item.nome}
+          imagem ={item.imagem}
+          valor ={item.valor}
+          />  
+          )}
+          />
+        </View>
     </View>
   );
 }
