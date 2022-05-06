@@ -1,10 +1,10 @@
 import React from "react";
 import {View, StyleSheet, Text} from "react-native";
 
-export default function Destaques() {
+export default function Lancamentos() {
     return (
     <View style={estilo.containerDest}>
-        <Text style={estilo.dest}>Jogos em destaque</Text>
+        <Text style={estilo.dest}>Próximos lançamentos</Text>
     </View>
     )
 }
@@ -17,7 +17,7 @@ const estilo = StyleSheet.create({
     },
     containerDest: {
         marginLeft: 20,
-        marginTop: 10,
+        marginTop: 20,
         padding: 5
     }
 })

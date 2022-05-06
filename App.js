@@ -5,6 +5,10 @@ import Jogos from './src/components/jogos';
 import JOGOS from './src/dados/jogos';
 import Destaques from './src/components/destaque';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
+import Lancamentos from './src/components/lancamentos';
+import Novos from './src/components/novos';
+import NOVOS_JOGOS from './src/dados/novos_jogos';
+
 
 export default function App() {
   return (
@@ -55,6 +59,24 @@ export default function App() {
           )}
           />
         </View>
+        <Lancamentos></Lancamentos>
+        <View>
+        <FlatList
+        horizontal={true}
+        data={NOVOS_JOGOS}
+        keyExtractor = {(item) => item.id}
+        renderItem = { ({ item }) => (
+
+        <Novos
+        titulo ={item.nome}
+        imagem ={item.imagem}
+        valor ={item.valor}
+        />  
+        )}
+        />
+
+        </View>
+        
     </View>
   );
 }
